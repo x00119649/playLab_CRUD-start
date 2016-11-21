@@ -4,10 +4,13 @@
 
 # An example controller showing a sample home page
 
-GET     /                     controllers.HomeController.index(name: String ?="visitor")
+GET	/			    controllers.HomeController.index
 
-GET     /about                      controllers.HomeController.about
-
+GET	/home			    controllers.HomeController.home
+GET	/mens			    controllers.HomeController.mens
+GET	/womens			    controllers.HomeController.womens
+GET	/equipment		    controllers.HomeController.equipment
+GET	/jerseys		    controllers.HomeController.jerseys
 GET     /products                   controllers.HomeController.products
 
 # An example controller showing how to use dependency injection
